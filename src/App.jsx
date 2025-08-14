@@ -72,10 +72,10 @@ export default function App() {
   const submitSong = (e) => {
     e.preventDefault();
     emailjs.sendForm(
-      "YOUR_SERVICE_ID",   // EmailJS 서비스 ID
-      "YOUR_TEMPLATE_ID",  // EmailJS 템플릿 ID
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
       formRef.current,
-      "YOUR_PUBLIC_KEY"    // EmailJS Public Key
+      "YOUR_PUBLIC_KEY"
     )
     .then(() => {
       alert("노래가 제출되었습니다!");
