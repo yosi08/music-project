@@ -71,11 +71,12 @@ export default function App() {
 
   const submitSong = (e) => {
     e.preventDefault();
+
     emailjs.sendForm(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
-      formRef.current,
-      "YOUR_PUBLIC_KEY"
+      "service_o2onfr6",       // 서비스 ID
+      "template_mf2swap",     // 템플릿 ID
+      formRef.current,        // form 데이터 자동 전송
+      "-jl5BPDgbmTGjYdsA"     // 퍼블릭 키
     )
     .then(() => {
       alert("노래가 제출되었습니다!");
